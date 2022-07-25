@@ -1,0 +1,15 @@
+.logoAP {
+  float: left;
+  width: 150px;
+}
+
+.portfolio {
+  float: left;
+  margin-top: 22px;
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+.portfolio span {
+  color: #f9004d;
+}

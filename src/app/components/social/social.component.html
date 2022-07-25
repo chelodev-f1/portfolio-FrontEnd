@@ -1,0 +1,37 @@
+<div class="social">
+  <a href=""
+    ><img src="../../../assets/img/linkedin.png" id="linkedin" alt=""
+  /></a>
+  <a href=""
+    ><img src="../../../assets/img/twitter.png" id="twitter" alt=""
+  /></a>
+  <a href=""
+    ><img src="../../../assets/img/instagram.png" id="instagram" alt=""
+  /></a>
+  <a href=""
+    ><img src="../../../assets/img/github.png" id="" alt="github" alt=""
+  /></a>
+  <a href=""
+    ><img src="../../../assets/img/facebook.png" id="facebook" alt=""
+  /></a>
+  <button
+    type="button"
+    class="btn btn-outline-light"
+    data-bs-toggle="modal"
+    data-bs-target="#ModalForm"
+    (click)="login()"
+    *ngIf="!isLogged"
+  >
+    INGRESO
+  </button>
+  <button
+    type="button"
+    class="btn btn-outline-light"
+    data-bs-toggle="modal"
+    data-bs-target="#ModalForm"
+    (click)="onLogOut()"
+    *ngIf="isLogged"
+  >
+    CERRAR SESION
+  </button>
+</div>

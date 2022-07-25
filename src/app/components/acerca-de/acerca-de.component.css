@@ -1,0 +1,73 @@
+div,
+p,
+span {
+  background-color: #333;
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.nombre {
+  font-weight: bold;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.99px) {
+  .img-foto {
+    width: 200px;
+    border-radius: 50%;
+    left: 5%;
+    box-shadow: 3px 3px 3px grey;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .img-foto {
+    position: absolute;
+    width: 200px;
+    border-radius: 50%;
+    top: 680px;
+    left: 5%;
+    box-shadow: 3px 3px 3px grey;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .img-foto {
+    position: absolute;
+    width: 250px;
+    border-radius: 50%;
+    top: 660px;
+    left: 5%;
+    box-shadow: 3px 3px 3px grey;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .img-foto {
+    position: absolute;
+    width: 300px;
+    border-radius: 50%;
+    top: 640px;
+    left: 5%;
+    box-shadow: 3px 3px 3px grey;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .img-foto {
+    position: absolute;
+    width: 300px;
+    border-radius: 50%;
+    top: 640px;
+    left: 5%;
+    box-shadow: 3px 3px 3px grey;
+  }
+}
