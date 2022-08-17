@@ -1,5 +1,53 @@
 <div class="row">
-  <h1>Hard & Soft skills</h1>
+  <h1>Hard & Soft Skills</h1>
+  <div class="col-lg-2">
+    <button
+      type="button"
+      class="btn btn-dark"
+      routerLink="/nuevohys"
+      *ngIf="isLogged"
+    >
+      Agregar Skill
+    </button>
+  </div>
+
+  <div class="col-lg-12"></div>
+
+  <div
+    *ngFor="let Hardsoft of hardsoft"
+    class="text-center col-sm-4 col-md-4 col-lg-4"
+  >
+    <circle-progress
+      [percent]="Hardsoft.porcentajeS"
+      [radius]="100"
+      [showUnits]="false"
+      [titleFontSize]="'2em'"
+      [title]="Hardsoft.nombreS"
+      [showSubtitle]="false"
+      [subtitle]="Hardsoft.nombreS"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="6"
+      [outerStrokeColor]="'#ff008e'"
+      [innerStrokeColor]="'#0c1e7f'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+
+    <div *ngIf="isLogged">
+      <button class="btn btn-light" routerLink="/edithys/{{ Hardsoft.id }}">
+        <i class="bi bi-pencil-fill"></i>
+      </button>
+    </div>
+
+    <div *ngIf="isLogged">
+      <button class="btn btn-danger" (click)="delete(Hardsoft.id)">
+        <i class="bi bi-trash-fill"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row">
   <div class="text-center col-sm-4 col-md-4 col-lg-4">
     <circle-progress
       [percent]="90"
@@ -108,4 +156,4 @@
       [animationDuration]="300"
     ></circle-progress>
   </div>
-</div>
+</div> -->
