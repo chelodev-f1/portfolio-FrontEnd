@@ -9,7 +9,10 @@ import { JwtDto } from '../model/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/';
+  //Local
+  //authURL = 'http://localhost:8080/auth/';
+  //Remoto
+  authURL = 'https://chelodevback.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

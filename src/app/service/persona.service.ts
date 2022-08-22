@@ -7,7 +7,11 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'http://localhost:8080/personas/';
+  //Local
+  //URL = 'http://localhost:8080/personas/';
+  //Remoto
+  URL = 'https://chelodevback.herokuapp.com/personas/';
+
   constructor(private http: HttpClient) { }
 
   public getPersona(): Observable<persona> {

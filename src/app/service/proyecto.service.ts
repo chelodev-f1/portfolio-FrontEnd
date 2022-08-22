@@ -7,7 +7,10 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root'
 })
 export class ProyectoService {
-  URL = 'http://localhost:8080/proyectos/';
+  //Local
+  //URL = 'http://localhost:8080/proyectos/';
+  //Remoto
+  URL = 'https://chelodevback.herokuapp.com/proyectos/';
 
   constructor(private httpClient: HttpClient) { }
 

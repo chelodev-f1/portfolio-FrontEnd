@@ -7,7 +7,10 @@ import { Hardsoft } from '../model/hardsoft';
   providedIn: 'root'
 })
 export class HardsoftService {
-  URL = 'http://localhost:8080/skill/';
+  //Local
+  //URL = 'http://localhost:8080/skill/';
+  //Remoto
+  URL = 'https://chelodevback.herokuapp.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 
