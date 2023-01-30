@@ -10,7 +10,8 @@ export class PersonaService {
   //Local
   //URL = 'http://localhost:8080/personas/';
   //Remoto
-  URL = 'https://chelodevback.herokuapp.com/personas/';
+  //URL = 'https://chelodevback.herokuapp.com/personas/';
+  URL = 'https://backendchelodev.onrender.com/personas/';
 
   constructor(private http: HttpClient) { }
 

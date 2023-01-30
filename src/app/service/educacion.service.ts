@@ -10,7 +10,8 @@ export class EducacionService {
   //Local
   //URL = 'http://localhost:8080/educacion/';
   //Remoto
-  URL = 'https://chelodevback.herokuapp.com/educacion/';
+  //URL = 'https://chelodevback.herokuapp.com/educacion/';
+  URL = 'https://backendchelodev.onrender.com/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 

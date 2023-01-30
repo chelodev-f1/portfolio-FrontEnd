@@ -12,7 +12,8 @@ export class AuthService {
   //Local
   //authURL = 'http://localhost:8080/auth/';
   //Remoto
-  authURL = 'https://chelodevback.herokuapp.com/auth/';
+  //authURL = 'https://chelodevback.herokuapp.com/auth/';
+  authURL = 'https://backendchelodev.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

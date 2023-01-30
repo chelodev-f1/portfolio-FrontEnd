@@ -10,7 +10,8 @@ export class ProyectoService {
   //Local
   //URL = 'http://localhost:8080/proyectos/';
   //Remoto
-  URL = 'https://chelodevback.herokuapp.com/proyectos/';
+  //URL = 'https://chelodevback.herokuapp.com/proyectos/';
+  URL = 'https://backendchelodev.onrender.com/proyectos/';
 
   constructor(private httpClient: HttpClient) { }
 

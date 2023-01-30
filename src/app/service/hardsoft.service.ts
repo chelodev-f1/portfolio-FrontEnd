@@ -10,7 +10,8 @@ export class HardsoftService {
   //Local
   //URL = 'http://localhost:8080/skill/';
   //Remoto
-  URL = 'https://chelodevback.herokuapp.com/skill/';
+  //URL = 'https://chelodevback.herokuapp.com/skill/';
+  URL = 'https://backendchelodev.onrender.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 

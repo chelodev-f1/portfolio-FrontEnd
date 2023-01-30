@@ -10,7 +10,8 @@ export class SExperienciaService {
   //Local
   //expURL = 'http://localhost:8080/explab/'
   //Remoto
-  expURL = 'https://chelodevback.herokuapp.com/explab/'
+  //expURL = 'https://chelodevback.herokuapp.com/explab/'
+  expURL = 'https://backendchelodev.onrender.com/explab/'
 
   constructor(private httpClient: HttpClient) { }
 
